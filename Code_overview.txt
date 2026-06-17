@@ -1,0 +1,39 @@
+
+Attached scripts for the manuscript: 
+Genetic architecture of high-dimensional liver radiomic phenotypes and their role in common metabolic diseases 
+
+From the method perspective, it contains the following major modules: 
+
+1. Deep-learning MRI phenotyping 
+	Stitching
+	Segmentation
+	Radiomics extraction
+2. Epidemiological analysis
+	MRI-internal analysis
+	MRI-external-traits analysis
+	MRI-incident-outcome analysis
+3. Genome-wide association analysis and its related analysis
+	GWAS (REGENIE) 
+	BMI-adjusted GWAS
+	Heritability and enrichment analysis
+	Replication
+4. Genetic factor analysis
+	Cross-trait LDSC
+	First-level SEM
+	Second-level SEM
+5. Locus pleiotropy 
+	internal pleiotropy
+	external pleiotropy (PLATLAS)
+6. Multi-omics integration
+	PRS and in-sample LD
+	PWAS
+	Colocalization
+7. Genetic correlation
+8. Radiomic MR
+	MRI-similarity-clustering
+	UVMR
+	MVMR
+	MVMR-SuSiE/MVMR-FA
+9. Drug-target MR
+	cis-MR (IVW, LD-IVW, PC-GMM)
+	polygenic-MR (MR-Clust)
