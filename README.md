@@ -20,7 +20,8 @@ Main results are provided in the paper and its supplementary materials. We will 
 
 
 ## Code
-Custom analysis scripts will be made available in this repo.
+Custom analysis scripts are now available at [code](code/). The analysis structures are summarized at [Code Overview](Code_overview.txt).
+
 
 ## Citation
 
