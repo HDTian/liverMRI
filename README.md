@@ -19,10 +19,16 @@ All liver MRI GWAS summary data will be publicly available at an appropriate tim
 Main results are provided in the paper and its supplementary materials. We will add the necessary info to guide the MRI features of importance and the necessary data (eg the phenotypical correlation between QC-ed MRI features) that is anticipated to be useful in certain analyses.
 
 
-## Code
+## Code Instructions
 Custom analysis scripts are now available at [code](code/). The analysis structures are summarized at [Code Overview](Code_overview.txt).
 
-Details of the software and hardware dependencies/versions are provided in [System_requirements.txt](System_requirements.txt).
+Details of the software and hardware dependencies/versions are provided in [System_Requirements](System_requirements.txt).
+
+## How to run the analysis
+1. **Identify the analysis.** Decide which analysis from our [manuscript](https://www.medrxiv.org/content/10.64898/2026.05.19.26353617v1) you wish to run.
+2. **Locate the script.** Use [Code overview](Code_overview.txt) to find the corresponding script in the [code](code/) folder.
+3. **Check dependencies.** Software and package versions are listed in [System requirements](System_requirements.txt).
+4. **Run the script.** Each script is self-contained, with detailed guidance provided as in-script comments. Update the file paths to point to your input data. 
 
 ## Citation
 
