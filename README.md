@@ -22,6 +22,7 @@ Main results are provided in the paper and its supplementary materials. We will 
 ## Code
 Custom analysis scripts are now available at [code](code/). The analysis structures are summarized at [Code Overview](Code_overview.txt).
 
+Details of the software and hardware dependencies/versions are provided in [System_requirements.txt](System_requirements.txt).
 
 ## Citation
 
