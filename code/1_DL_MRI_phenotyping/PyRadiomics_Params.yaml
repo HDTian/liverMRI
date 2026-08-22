@@ -1,0 +1,54 @@
+# PyRadiomics extraction parameter file (v3.1.0)
+#
+# These settings correspond to the PyRadiomics v3.1.0 default configuration
+# used for radiomic feature extraction in this study.
+#
+# Usage: pyradiomics <image> <mask> -p PyRadiomics_Params.yaml
+
+setting:
+  # --- Image preprocessing ---
+  resampledPixelSpacing:        # not set -> resampling disabled; features computed
+                                 # on the native (unresampled) voxel grid
+  interpolator: 'sitkBSpline'   # configured, but never invoked since resampling is disabled
+  normalize: false              # no intensity normalization; raw voxel intensities used
+  normalizeScale: 1
+  removeOutliers:                # not set -> no outlier removal at the voxel level
+  resegmentRange:                # not set -> no resegmentation of the ROI
+  preCrop: false
+  padDistance: 5
+  minimumROIDimensions: 2
+  minimumROISize:                 # not set -> no minimum ROI size check
+  label: 1                        # single foreground label (liver)
+
+  # --- Gray-level discretization ---
+  binWidth: 25                    # fixed bin width, absolute intensity units
+                                   # (binCount not used)
+
+  # --- Texture matrix computation ---
+  force2D: false                  # 3D computation (not 2D/2.5D); applies to
+                                   # GLCM, GLRLM, GLSZM, NGTDM, GLDM
+  force2Ddimension: 0
+  distances: [1]                  # nearest-neighbor offsets only
+  symmetricalGLCM: true
+  weightingNorm:                  # not set -> no distance weighting applied
+  gldm_a: 0
+
+  # --- Provenance ---
+  additionalInfo: true
+
+# Only the unfiltered ("Original") image is used; no derived/filtered
+# images (LoG, wavelet, square, exponential, gradient, etc.) are computed.
+imageType:
+  Original: {}
+
+# All features within each of these classes are extracted (default: all
+# features enabled; shape2D is not enabled, consistent with PyRadiomics
+# defaults, and is not reported in this study).
+featureClass:
+  shape:
+  firstorder:
+  glcm:
+  glrlm:
+  glszm:
+  ngtdm:
+  gldm:
